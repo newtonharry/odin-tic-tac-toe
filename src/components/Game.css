@@ -1,0 +1,41 @@
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 450px;
+  height: 450px;
+  margin: 2rem;
+}
+
+.reset {
+  margin: 1rem;
+  background-color: #e76f51;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 1.5rem;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  border: 3px solid black;
+}
+
+.game-result {
+  height: 2rem;
+}
+
+.fade-in-text {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

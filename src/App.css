@@ -1,0 +1,58 @@
+:root {
+  --clr-neon-pink: hsl(317 100% 54%);
+  --clr-neon-green: rgb(20, 197, 82);
+}
+
+.App {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4a4e69;
+}
+
+.header {
+  flex: 1 1 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.neon-title {
+  font-size: 2rem;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--clr-neon-pink);
+  border: var(--clr-neon-pink) 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon-pink),
+    0 0 0.5em 0 var(--clr-neon-pink);
+
+  position: relative;
+}
+
+.neon-title:hover::before,
+.neon-title:focus::before {
+  opacity: 1;
+}
+.neon-title:hover::after,
+.neon-title:focus::after {
+  opacity: 1;
+}
+
+.game {
+  flex: 1 1 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
